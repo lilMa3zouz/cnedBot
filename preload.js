@@ -10,3 +10,18 @@ window.addEventListener('DOMContentLoaded', () => {
     replaceText(`${type}-version`, process.versions[type])
   }
 })
+
+function sendToPython() {
+  var { PythonShell } = require('python-shell');
+    let options = {
+      mode: 'text'
+    };
+    PythonShell.run('server.py', options, function (err, results) {
+      if (err) throw err;
+      // results is an array consisting of messages collected during execution
+      console.log('response: ', results);
+  
+    });
+}
+
+sendToPython()
