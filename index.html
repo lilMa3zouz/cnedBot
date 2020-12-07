@@ -4,30 +4,65 @@
     <meta charset="UTF-8">
     <title>CNEDBot</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/11.0.0/css/fabric.min.css"/>
+    <link rel="stylesheet" href="./res/css/style.css" />
     
 </head>
 
 <body>
-    <!-- Just an image -->
-  <nav id="navbar" class="navbar navbar-light py-2">
-    <div class="row" style="margin-left:20px;height: 100%;margin-bottom: 20px;">
-      <img src="logo.svg" width="100px" height="100px" alt="">
-      <h1 style="margin-left: 20px;margin-top: 20px;"> CNEDBot</h1><h3 style="margin-top: 30px;margin-left: 20px">by Mazouz & CX</h3>
+    <p id="profile">
+      <img src="./res/logo.svg" width="80px" alt=""><span id="username">mmazouz6</span>
+    </p>
+    <div class="ms-depth-16" id="subjects">
+      <p id="subjectsTitle">Matières</p>
+      <p class="subject">Physique-Chimie</p>
+      <p class="subject">Mathématiques</p>
+      <p class="subject">littérature</p>
+      <p class="subject">Histoire-Géo</p>
+      <p id="addSubject" class="ms-depth-16">+</p>
     </div>
-  </a>
-</nav>
-    <div id="content">
-    <div class="row"><p style="width: 100%;text-align: center;height: 100%;"><input id="heure" type="text" class="number" placeholder="22"/><span style="font-size: 80px;color: #EAE0D5;box-shadow: 1px 1px 20px 0px #04000e;">:</span><input class="number" placeholder="30" type="text" id="minute"/></p></div>
-    <input id="input" placeholder="Lien du cours..."></input><br>
-    <input id="btn" type="button" value="Programmer"></input>
-    </br>
-    <p id="state"></p>
+    <div id="coursesList" >
+      <div class="course ms-depth-16" >
+        <p style="margin-left: 20px;padding-top: 15px;padding-bottom: 15px;">
+          <span class="courseSubject">Mathématiques</span>
+        <span class="courseTeacher">Bensaid</span><br>
+        <span class="courseHour">8:00 - 9h55</span>
+        </p>
+      </div>
+      <div class="course ms-depth-16" >
+        <p style="margin-left: 20px;padding-top: 15px;padding-bottom: 15px;">
+          <span class="courseSubject">Mathématiques</span>
+        <span class="courseTeacher">Bensaid</span><br>
+        <span class="courseHour">8:00 - 9h55</span>
+        </p>
+      </div> 
+      <div class="course ms-depth-16" >
+        <p style="margin-left: 20px;padding-top: 15px;padding-bottom: 15px;">
+          <span class="courseSubject">Physique-Chimie</span>
+        <span class="courseTeacher">Perrard</span><br>
+        <span class="courseHour">10:10 - 12:00</span>
+        </p>
+      </div>
+      <div class="course ms-depth-16" >
+        <p style="margin-left: 20px;padding-top: 15px;padding-bottom: 15px;">
+          <span class="courseSubject">SVT</span><br>
+        <span class="courseTeacher">Scerbo</span><br>
+        <span class="courseHour">13:55 - 14:50</span>
+        </p>
+      </div>
+      <div class="course ms-depth-16" >
+        <p style="margin-left: 20px;padding-top: 15px;padding-bottom: 15px;">
+          <span class="courseSubject">SVT</span><br>
+        <span class="courseTeacher">Scerbo</span><br>
+        <span class="courseHour">13:55 - 14:50</span>
+        </p>
+      </div> 
     </div>
+    <div id="addClass" class="ms-depth-16"><p style="width: 100%;text-align: center;height: 100%;vertical-align: middle;font-size: 23px;line-height: 65px;">Ajouter un cours</p></div>
     
     <script>window.$ = window.jQuery = require('jquery');</script>
-    <script src="popper.min.js"></script>
-    <script src="./renderer.js"></script>
+    <script src="./res/lib/popper.min.js"></script>
+    <script src="./res/script/renderer.js"></script>
 
 </body>
 </html>

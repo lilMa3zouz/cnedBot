@@ -1,0 +1,120 @@
+*{
+    outline: none !important;
+    --background: #1B1E36;
+    --component: #222644;
+}
+::-webkit-scrollbar {
+  width: 10px;
+  margin-left: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: var(--component); 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+body{
+    background-color: var(--background);
+    position: absolute;
+    top: 0; left: 0;right: 0;bottom: 0;
+    color: white;
+    overflow: hidden;
+}
+input{
+    color: white;
+    border-radius: 5px;
+    border: 0.1px solid #EAE0D5;
+    background-color: var(--component);
+    text-align: center;
+}
+#profile{
+    margin: 20px;
+    border-radius: 20px;
+    border: 2px solid var(--component);
+    width: 320px;
+    height: 80px;
+    padding: 10px;
+}
+#username{
+    font-size: 30px;
+    margin-left: 15px;
+    line-height: 45px;
+    font-weight: 500;
+}
+#addClass{
+    position: absolute;
+    right: 20px;
+    bottom: 30px;
+    width: 200px;
+    height: 70px;
+    background-color: var(--component);
+    border-radius: 200px;
+}
+#subjects{
+    height: 540px;
+    margin-left: 20px;
+    width: 325px;
+    background-color: var(--background);
+    border: 3px solid var(--component);
+    border-radius: 20px;
+}
+#subjectsTitle{
+    padding-top: 10px;
+    padding-bottom: 5px;
+    margin-left: 20px;
+    font-size: 30px;
+    border-bottom: 1px solid white;
+    width: 285px;
+}
+.subject{
+    padding:10px;
+    margin-left: 10px;
+    margin-right: 40px;
+    font-size: 25px;
+    border: 3px solid var(--component);
+    border-radius: 20px;
+}
+#addSubject{
+    width: 70px;
+    height: 70px;
+    background-color: var(--component);
+    text-align: center;
+    font-size: 50px;
+    line-height: 60px;
+    border-radius: 100%;
+    position: relative;
+    left: 245px;
+    bottom: -65px;
+}
+#coursesList{
+    position: absolute;
+    left: 32.5%;
+    bottom: 20px;
+    width: 400px;
+    top: 30px;
+    overflow-y:scroll;
+}
+.course{
+    margin-bottom: 35px;
+    background-color: var(--component);
+    width: 350px;
+    border-radius: 20px;
+}
+.courseSubject{
+    font-size: 35px;
+    font-weight: 500;
+}
+.courseTeacher{
+    font-size: 30px;
+    font-weight: 400;
+    
+}

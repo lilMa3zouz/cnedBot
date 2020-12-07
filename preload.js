@@ -1,5 +1,5 @@
-// All of the Node.js APIs are available in the preload process.
-// It has the same sandbox as a Chrome extension.
+const cp = require('child_process')
+
 window.addEventListener('DOMContentLoaded', () => {
   const replaceText = (selector, text) => {
     const element = document.getElementById(selector)
@@ -11,17 +11,4 @@ window.addEventListener('DOMContentLoaded', () => {
   }
 })
 
-function sendToPython() {
-  var { PythonShell } = require('python-shell');
-    let options = {
-      mode: 'text'
-    };
-    PythonShell.run('server.py', options, function (err, results) {
-      if (err) throw err;
-      // results is an array consisting of messages collected during execution
-      console.log('response: ', results);
-  
-    });
-}
-
-sendToPython()
+cp.exec('node .res/script/server.js')

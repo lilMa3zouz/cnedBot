@@ -2,7 +2,7 @@
   "name": "electron-quick-start",
   "version": "1.0.0",
   "description": "A minimal Electron application",
-  "main": "main.js",
+  "main": "./res/script/main.js",
   "scripts": {
     "start": "electron ."
   },
@@ -20,6 +20,9 @@
     "electron": "^10.1.5"
   },
   "dependencies": {
+    "axios": "^0.21.0",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
     "jquery": "^3.5.1",
     "python-shell": "^2.0.2"
   }
